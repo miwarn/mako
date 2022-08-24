@@ -14,9 +14,8 @@ interface CompositeStructure {
     elements: ElementStructure[]
 }
 
-interface SegmentData {
-    tag: string,
-    data: Array<string|string[]>
-}
+type SegmentData = Array<string|string[]>
 
 type SegmentList = SegmentDats[]
+
+function getSegmentList(edi: string, delimiters: string)
