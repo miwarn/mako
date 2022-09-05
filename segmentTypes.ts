@@ -1,4 +1,4 @@
-interface UNH {
+export interface UNH {
     D0062: string,
     S009: {
         D0065: string,
@@ -14,12 +14,12 @@ interface UNH {
     }
 }
 
-interface UNT {
+export interface UNT {
     D0074: string,
     D0062: string
 }
 
-interface BGM {
+export interface BGM {
     C002?: {
         D1001?: string
     },
@@ -29,20 +29,10 @@ interface BGM {
     D1225?: string
 }
 
-interface DTM {
+export interface DTM {
     C507: {
         D2005: string,
         D2380: string,
         D2379: string
     }
-}
-
-interface MSCONS {
-    UNH: UNH,
-    UNT: UNT,
-    BGM: BGM,
-    DTM: DTM[],
-    SG1: {
-        
-    }[]
 }
